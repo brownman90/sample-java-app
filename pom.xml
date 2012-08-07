@@ -2,10 +2,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>me.nickcarroll.app</groupId>
-    <artifactId>sample-java-web-app</artifactId>
+    <artifactId>sample-java-app</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>sample-java-web-app</name>
+    <name>sample-java-app</name>
     <url>http://maven.apache.org</url>
 
     <!-- Shared version number properties -->
@@ -70,16 +70,6 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>${maven.springframework.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>${maven.springframework.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
             <version>${maven.springframework.version}</version>
         </dependency>
         <dependency>

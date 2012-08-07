@@ -1,6 +1,5 @@
 package me.nickcarroll.app.service;
 
-import me.nickcarroll.sample.service.HelloWorldService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
