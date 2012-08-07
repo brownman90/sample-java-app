@@ -1,4 +1,4 @@
-package me.nickcarroll.sample.service;
+package me.nickcarroll.app.service;
 
 public class HelloWorldService {
     public String sayHello() {

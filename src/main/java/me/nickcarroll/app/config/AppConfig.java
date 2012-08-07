@@ -1,6 +1,6 @@
-package me.nickcarroll.sample.config;
+package me.nickcarroll.app.config;
 
-import me.nickcarroll.sample.service.HelloWorldService;
+import me.nickcarroll.app.service.HelloWorldService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
