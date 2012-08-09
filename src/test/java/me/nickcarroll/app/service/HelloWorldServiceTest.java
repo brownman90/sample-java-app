@@ -14,4 +14,19 @@ public class HelloWorldServiceTest {
         HelloWorldService helloWorldService = new HelloWorldService();
         assertEquals("Hello world!", helloWorldService.sayHello());
     }
+
+    @Test
+    public void shouldSayHelloToDmitry() {
+        HelloWorldService helloWorldService = new HelloWorldService();
+
+        assertEquals("Hello Dmitry!", helloWorldService.sayHelloTo("Dmitry"));
+    }
+
+    @Test
+    public void shouldSayHelloToTony() {
+        HelloWorldService helloWorldService = new HelloWorldService();
+
+        assertEquals("Hello Tony!", helloWorldService.sayHelloTo("Tony"));
+    }
+
 }
