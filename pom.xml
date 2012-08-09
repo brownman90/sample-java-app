@@ -11,6 +11,7 @@
     <!-- Shared version number properties -->
     <properties>
         <maven.target-jdk.version>1.6</maven.target-jdk.version>
+        <maven.compiler-plugin.version>2.5.1</maven.compiler-plugin.version>
         <maven.springframework.version>3.1.2.RELEASE</maven.springframework.version>
         <maven.cglib.version>2.2.2</maven.cglib.version>
         <maven.cobertura.version>2.5.1</maven.cobertura.version>
@@ -27,10 +28,28 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler-plugin.version}</version>
+                <configuration>
+                    <source>${maven.target-jdk.version}</source>
+                    <target>${maven.target-jdk.version}</target>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>cobertura-maven-plugin</artifactId>
                 <version>${maven.cobertura.version}</version>
                 <configuration>
+                    <check>
+                        <branchRate>40</branchRate>
+                        <lineRate>40</lineRate>
+                        <haltOnFailure>true</haltOnFailure>
+                        <totalBranchRate>40</totalBranchRate>
+                        <totalLineRate>40</totalLineRate>
+                        <packageLineRate>40</packageLineRate>
+                        <packageBranchRate>40</packageBranchRate>
+                    </check>
                     <instrumentation>
                         <excludes>
                             <exclude>**/*Test.class</exclude>
